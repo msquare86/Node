@@ -1,0 +1,39 @@
+<!DOCTYPE>
+<html>
+
+<head>
+    <style>
+        body {
+            background: skyblue;
+            font-family: verdana
+        }
+        
+        h1 {
+            font-size: 48 px, text-align: center
+        }
+    </style>
+</head>
+
+<body>
+    <h1>
+        <center>Hello
+            <%= person %>
+        </center>
+    </h1>
+    <br> <br>
+    <h1> Age:::::
+        <%= data.Age %>
+    </h1>
+    <br><br>
+    <center>
+        <ul>
+            <% data.hob.forEach(function(item){ %>
+                <li>
+                    <%= item %>
+                </li>
+            <% }); %>
+        </ul>
+    </center>
+</body>
+
+</html>
